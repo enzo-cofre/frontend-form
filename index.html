@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e672bff87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h2>Let's get in touch</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt illum labore facilis culpa neque necessitatibus delectus asperiores.</p>
+            <ul class="info-contact">
+                <li><i class="fas fa-map-marked-alt"></i>Av. 9 de Julio, Buenos Aires</li>
+                <li><i class="fas fa-envelope"></i>email@info.com</li>
+                <li><i class="fas fa-phone-alt"></i>123 4567 890</li>
+            </ul>
+            <div class="media">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="#/" ><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#/"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="form">
+            <div class="arrow"></div>
+
+            <h2>Contact us</h2>
+            <form id="form" autocomplete="off" novalidate>
+                <div class="input-container">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" class="input">
+                    <p></p>
+                </div>
+                <div class="input-container">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" class="input">
+                    <p></p>
+                </div>
+                <div class="input-container textarea">
+                    <label>Message</label>
+                    <textarea name="message" id="message" class="input"></textarea>
+                    <p></p>
+                </div>
+                <button id="button">Send</button>
+            </form>
+            <div class="loader" id="loader">
+                <img src="./assets/rings_loader.svg" alt="sending...">
+                <span>Sending...</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
